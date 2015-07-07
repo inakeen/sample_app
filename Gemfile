@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-
+gem 'test-unit'
+gem 'minitest'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
 # Use sqlite3 as the database for Active Record
@@ -17,6 +18,12 @@ gem 'coffee-rails', '~> 4.1.0'
 group :development, :test do
 #  gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
+end
+
+group :test do
+  gem "minitest"
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara'
 end
 
 # Use jquery as the JavaScript library
